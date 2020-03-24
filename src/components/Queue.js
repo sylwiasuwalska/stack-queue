@@ -1,4 +1,6 @@
 import React from "react";
+import { Form, Button } from "react-bootstrap";
+
 import FormPattern from "./FormPattern.js";
 
 class Queue extends React.Component {
@@ -15,14 +17,14 @@ class Queue extends React.Component {
 
   dequeue = () => {
     let items = this.state.items;
-    if (this.state.items.length === 0) return "Underflow";
+    if (this.state.items.length == 0) return "Underflow";
     let element = items.shift();
     this.setState({ items });
     return element;
   };
 
   isEmpty = () => {
-    if (!this.state.items.length === 0) {
+    if (!this.state.items.length == 0) {
       return this.printQueue();
     } else {
       return "Queue is empty";
@@ -49,7 +51,7 @@ class Queue extends React.Component {
       <div className="Queue">
         <section>
           <h2>Queue</h2>
-          <p>FIFO - Fast In First Out</p>
+          <p>FIFO - First In First Out</p>
         </section>
         <FormPattern
           name="queue"

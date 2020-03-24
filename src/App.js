@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Jumbotron className="header" fluid>
         <Container>
-          <h1>Stack, Queue, Linked List</h1>
+          <h1>Stack, Queue</h1>
           <p>
             Project as a part of the course Algorithms I by Princton University,
             published on Coursera.
