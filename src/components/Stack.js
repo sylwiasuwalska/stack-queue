@@ -55,11 +55,13 @@ class Stack extends React.Component {
         </section>
         <FormPattern
           name={"stack"}
+          methodName1="push"
+          methodName2="pop"
           number={this.state.number}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
-          push={this.pushToStack}
-          pop={this.popFromStack}
+          add={this.pushToStack}
+          remove={this.popFromStack}
         />
         <p>{this.isEmpty()}</p>
       </div>

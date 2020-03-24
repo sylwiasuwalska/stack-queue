@@ -8,33 +8,33 @@ class Queue extends React.Component {
     this.state = { items: [], number: 0 };
   }
 
-  pushToQueue = element => {
+  enqueue = element => {
     let items = this.state.items;
     items.push(element);
     this.setState({ items });
   };
 
-  popFromQueue = () => {
+  dequeue = () => {
     let items = this.state.items;
     if (this.state.items.length == 0) return "Underflow";
-    let element = items.pop();
+    let element = items.shift();
     this.setState({ items });
     return element;
   };
 
   isEmpty = () => {
     if (!this.state.items.length == 0) {
-      return this.printStack();
+      return this.printQueue();
     } else {
-      return "Stack is empty";
+      return "Queue is empty";
     }
   };
 
-  printStack = () => {
+  printQueue = () => {
     var str = "";
     for (let i = 0; i < this.state.items.length; i++)
       str += this.state.items[i] + " ";
-    return `Current stack: ${str}`;
+    return `Current queue: ${str}`;
   };
 
   handleChange = event => {
@@ -47,17 +47,19 @@ class Queue extends React.Component {
 
   render() {
     return (
-      <div className="Stack">
+      <div className="Queue">
         <section>
-          <h2>Stack</h2>
+          <h2>Queue</h2>
         </section>
         <FormPattern
-          name={"stack"}
+          name={"queue"}
+          methodName1="enqueue"
+          methodName2="dequeue"
           number={this.state.number}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
-          push={this.pushToStack}
-          pop={this.popFromStack}
+          add={this.enqueue}
+          remove={this.dequeue}
         />
         <p>{this.isEmpty()}</p>
       </div>

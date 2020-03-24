@@ -21,17 +21,17 @@ class FormPattern extends React.Component {
         </Form.Group>
 
         <div>
-          You element in {this.props.name} is: {this.props.number}
+          Your element in {this.props.name} is: {this.props.number}
         </div>
         <Button
           variant="secondary"
           block
-          onClick={() => this.props.push(this.props.number)}
+          onClick={() => this.props.add(this.props.number)}
         >
-          Method Push
+          Method {this.props.methodName1}
         </Button>
-        <Button variant="secondary" block onClick={this.props.pop}>
-          Method Pop
+        <Button variant="secondary" block onClick={this.props.remove}>
+          Method {this.props.methodName2}
         </Button>
       </Form>
     );

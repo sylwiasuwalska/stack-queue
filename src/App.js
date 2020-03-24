@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Stack from "./components/Stack.js";
+import Queue from "./components/Queue.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </header>
       <section>
         <Stack />
+        <Queue />
       </section>
 
       <footer></footer>
