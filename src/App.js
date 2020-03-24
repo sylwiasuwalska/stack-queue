@@ -12,8 +12,8 @@ function App() {
         <Container>
           <h1>Stack, Queue, Linked List</h1>
           <p>
-            Project created in relation to the course Algorithms I by Princton
-            University, published on Coursera.
+            Project as a part of the course Algorithms I by Princton University,
+            published on Coursera.
           </p>
         </Container>
       </Jumbotron>
