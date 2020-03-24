@@ -2,21 +2,20 @@ import React from "react";
 import FormPattern from "./FormPattern.js";
 import { Form, Button } from "react-bootstrap";
 
-class Stack extends React.Component {
+class Queue extends React.Component {
   constructor() {
     super();
     this.state = { items: [], number: 0 };
   }
 
-  pushToStack = element => {
+  pushToQueue = element => {
     let items = this.state.items;
     items.push(element);
     this.setState({ items });
   };
 
-  popFromStack = () => {
+  popFromQueue = () => {
     let items = this.state.items;
-    console.log(items);
     if (this.state.items.length == 0) return "Underflow";
     let element = items.pop();
     this.setState({ items });
@@ -24,7 +23,6 @@ class Stack extends React.Component {
   };
 
   isEmpty = () => {
-    console.log(this.state.items.length);
     if (!this.state.items.length == 0) {
       return this.printStack();
     } else {
@@ -67,4 +65,4 @@ class Stack extends React.Component {
   }
 }
 
-export default Stack;
+export default Queue;
