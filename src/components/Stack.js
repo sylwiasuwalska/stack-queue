@@ -52,9 +52,10 @@ class Stack extends React.Component {
       <div className="Stack">
         <section>
           <h2>Stack</h2>
+          <p>LIFO - Last In First Out</p>
         </section>
         <FormPattern
-          name={"stack"}
+          name="stack"
           methodName1="push"
           methodName2="pop"
           number={this.state.number}

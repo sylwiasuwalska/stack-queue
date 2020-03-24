@@ -50,9 +50,10 @@ class Queue extends React.Component {
       <div className="Queue">
         <section>
           <h2>Queue</h2>
+          <p>FIFO - Fast In First Out</p>
         </section>
         <FormPattern
-          name={"queue"}
+          name="queue"
           methodName1="enqueue"
           methodName2="dequeue"
           number={this.state.number}

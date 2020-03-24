@@ -21,7 +21,9 @@ class FormPattern extends React.Component {
         </Form.Group>
 
         <div>
-          Your element in {this.props.name} is: {this.props.number}
+          <p>
+            Your element in {this.props.name} is: {this.props.number}
+          </p>
         </div>
         <Button
           variant="secondary"
