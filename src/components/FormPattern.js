@@ -2,10 +2,6 @@ import React from "react";
 import { Form, Button } from "react-bootstrap";
 
 class FormPattern extends React.Component {
-  constructor() {
-    super();
-  }
-
   render() {
     return (
       <Form onSubmit={this.props.handleSubmit}>

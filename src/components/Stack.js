@@ -1,6 +1,5 @@
 import React from "react";
 import FormPattern from "./FormPattern.js";
-import { Form, Button } from "react-bootstrap";
 
 class Stack extends React.Component {
   constructor() {
@@ -16,8 +15,7 @@ class Stack extends React.Component {
 
   popFromStack = () => {
     let items = this.state.items;
-    console.log(items);
-    if (this.state.items.length == 0) return "Underflow";
+    if (this.state.items.length === 0) return "Underflow";
     let element = items.pop();
     this.setState({ items });
     return element;
@@ -25,7 +23,7 @@ class Stack extends React.Component {
 
   isEmpty = () => {
     console.log(this.state.items.length);
-    if (!this.state.items.length == 0) {
+    if (!this.state.items.length === 0) {
       return this.printStack();
     } else {
       return "Stack is empty";
