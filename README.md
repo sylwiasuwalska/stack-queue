@@ -6,4 +6,4 @@ Stack:
 -   React Bootstrap
 
 Demo:
-https://sylwiasuwalska.github.io/stack-queue-linked-list/
+https://sylwiasuwalska.github.io/stack-queue/
