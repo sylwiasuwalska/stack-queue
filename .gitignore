@@ -26,3 +26,6 @@ yarn-error.log*
 .idea/modules.xml
 .idea/stack-queue.iml
 .idea/vcs.xml
+
+# Default ignored files
+/workspace.xml
